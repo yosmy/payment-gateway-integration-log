@@ -1,0 +1,35 @@
+{
+    "name": "yosmy/payment-gateway-integration-log",
+    "description": "",
+    "require": {
+        "php": ">=7.2",
+        "yosmy/event": "@dev",
+        "yosmy/payment-gateway-integration": "@dev"
+    },
+    "require-dev": {
+        "symfony/debug": "~4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yosmy\\Payment\\": [
+                "src/card",
+                "src/charge"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yosmy\\Payment\\Test\\": [
+                "tests/user"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://php.yosmy.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
